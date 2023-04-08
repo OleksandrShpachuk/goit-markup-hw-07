@@ -136,8 +136,6 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  margin-right: 76px;
-
   color: var(--primary-brand-color);
 }
 
@@ -272,7 +270,7 @@ body {
   fill: var(--primary-bg-color);
 }
 
-/* ----Header menu-----768 */
+/* ----Header menu-----768-1157 */
 
 @media screen and (min-width: 768px) {
   .nav {
@@ -282,6 +280,11 @@ body {
     display: flex;
     align-items: center;
   }
+
+  .logo {
+    margin-right: 120px;
+  }
+
   .menu-item:not(:last-child) {
     margin-right: 40px;
   }
@@ -306,7 +309,7 @@ body {
     content: "";
     position: absolute;
     left: 0;
-    bottom: 0;
+    top: 50px;
 
     opacity: 0;
     transition: opacity var(--transition);
@@ -317,46 +320,65 @@ body {
     border-radius: 4px;
     background-color: var(--pressed-state-color);
   }
+  .menu-link:hover::after,
+  .menu-link:focus::after {
+    opacity: 1;
+  }
+  .menu-link.active::after {
+    opacity: 1;
+  }
+  .address {
+    font-style: normal;
+    margin-left: auto;
+  }
+  .address-link {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
+    color: var(--text-color);
+    transition: color var(--transition);
+  }
+  .address-link:hover,
+  .address-link:focus {
+    color: var(--pressed-state-color);
+  }
 }
 
-/* .menu-link:hover::after,
-.menu-link:focus::after {
-  opacity: 1;
-} */
+/* ------1158----------- */
 
-/* .menu-link.active::after {
-  opacity: 1;
-} */
+@media screen and (min-width: 1152px) {
+  .logo {
+    margin-right: 76px;
+  }
 
-/* .address {
-  font-style: normal;
-  margin-left: auto;
-} */
+  .menu-link::after {
+    top: 42px;
+  }
 
-/* .address-list {
-  display: flex;
-  align-items: center;
-} */
+  .address-list {
+    display: flex;
+    align-items: center;
+  }
 
-/* .address-item:not(:last-child) {
-  margin-right: 40px;
-} */
+  .address-item:not(:last-child) {
+    margin-right: 40px;
+  }
 
-/* .address-link {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  .address-link {
+    font-size: 16px;
+    line-height: 1.5;
 
-  color: var(--text-color);
-  transition: color var(--transition);
-} */
+    transition: color var(--transition);
+  }
 
-/* .address-link:hover,
-.address-link:focus {
-  color: var(--pressed-state-color);
-} */
+  .address-link:hover,
+  .address-link:focus {
+    color: var(--pressed-state-color);
+  }
+}
 
 /* Section HERO */
 
