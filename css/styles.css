@@ -107,6 +107,12 @@ body {
   height: 22px;
 }
 
+@media (min-width: 768px) {
+  .mob-menu-open {
+    display: none;
+  }
+}
+
 .header {
   border-bottom: 0.5px solid var(--primary-accent-color);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -114,6 +120,7 @@ body {
 }
 
 .header-menu {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -147,18 +154,26 @@ body {
   z-index: 1000;
   width: 100%;
   height: 100%;
-  background-color: beige;
+  padding-top: 80px;
+  padding-left: 40px;
+  background-color: white;
 
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: opacity var(--transition), visability var(--transition);
-}
-
-.mob-menu_is-opened {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+  transition: opacity var(--transition), visability var(--transition);
+}
+
+.mobile-menu.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+@media (min-width: 767px) {
+  .mob-menu {
+    display: none;
+  }
 }
 
 .mob-menu-close-button {
@@ -178,6 +193,17 @@ body {
   border-radius: 50%;
 }
 
+.mob-menu-list {
+}
+
+.mob-menu-item {
+  margin-bottom: 284px;
+}
+
+.mob-menu-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
 .mob-menu-link {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -185,6 +211,68 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+}
+
+.mob-menu-link:hover,
+.mob-menu-link:focus {
+  background-color: var(--pressed-state-color);
+}
+
+.mob-menu-link.current {
+  color: var(--primary-brand-color);
+}
+
+.mob-menu-adress-list {
+  margin-bottom: 48px;
+}
+
+.mob-menu-adress-link {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--primary-brand-color);
+}
+
+.mob-menu-adress-link:hover,
+.mob-menu-adress-link:focus {
+  color: var(--pressed-state-color);
+}
+
+.another {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.mob-menu-icon-list {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+}
+
+.mob-icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: background-color var(--transition);
+  background-color: var(--primary-brand-color);
+}
+
+.mon-icon-link:hover,
+.mob-icon-link:focus {
+  background-color: var(--pressed-state-color);
+}
+
+.mob-menu-link-icon {
+  fill: var(--primary-bg-color);
 }
 
 /* ----Header menu----- */
