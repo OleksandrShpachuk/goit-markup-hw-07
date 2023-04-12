@@ -734,6 +734,7 @@ body {
     column-gap: 24px;
     row-gap: 72px;
   }
+}
 
 @media screen and (min-width: 1158px) {
   .team {
@@ -1351,22 +1352,18 @@ body {
 /* -------PORTFOLIO PAGE--------- */
 
 .portfolio {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 /*======== Filter ======== */
 
 .filter-list {
   display: flex;
-  justify-content: center;
-
+  flex-wrap: wrap;
   margin-top: 0;
-  margin-bottom: 72px;
-}
-
-.filter-item:not(:last-child) {
-  margin-right: 24px;
+  margin-bottom: 48px;
+  width: 236px;
 }
 
 .filter-button {
@@ -1398,6 +1395,49 @@ body {
   color: #e7e9fc;
   background-color: var(--pressed-state-color);
 }
+
+/* 
+.filter-list {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 0;
+  margin-bottom: 72px;
+} */
+
+/* .filter-item:not(:last-child) {
+  margin-right: 24px;
+} */
+
+/* .filter-button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  display: block;
+
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border: none;
+  border-radius: 4px;
+
+  color: var(--primary-brand-color);
+  transition: color var(--transition), background-color var(--transition),
+    box-shadow var(--transition);
+} */
+
+/* .filter-button:hover,
+.filter-button:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+
+  color: #e7e9fc;
+  background-color: var(--pressed-state-color);
+} */
 
 /*======== Filter ======== */
 
@@ -1502,7 +1542,6 @@ body {
 .item-link:focus .overlay {
   transform: translate(0, 0);
 }
-
 /* ------Overlay------------ */
 
 /* =========Works list end======== */
