@@ -1360,160 +1360,11 @@ body {
   }
 }
 
-/* .logo-wrap {
-  display: flex;
-  gap: 120px;
-} */
+/*=========== Footer end========== */
 
-/* .footer-logo {
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: var(--primary-brand-color);
-} */
-
-/* .footer-color {
-  color: #f4f4fd;
-} */
-
-/* .footer-text {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #e7e9fc;
-
-  width: 264px;
-  margin-top: 16px;
-  margin-bottom: 0;
-} */
-
-/* ----Social icons---- */
-/* .social-text {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-
-  letter-spacing: 0.02em;
-  color: #ffffff;
-
-  margin-bottom: 16px;
-  margin-top: 0;
-} */
-
-/* .wrap-social-list {
-  display: flex;
-  gap: 16px;
-} */
-
-/* .wrap-social-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  transition: background-color var(--transition);
-  background-color: var(--primary-brand-color);
-} */
-
-/* .wrap-social-icon {
-  fill: var(--primary-bg-color);
-} */
-
-/* .wrap-social-link:hover,
-.wrap2-social-link:focus {
-  background-color: #31d0aa;
-} */
-
-/* ------Subscribe form------- */
-
-/* .wrap-subscribe {
-  display: flex;
-  flex-direction: column;
-} */
-
-/* .subscribe-form {
-  display: flex;
-  align-items: center;
-  width: 460px;
-  margin: 0;
-  padding: 0;
-} */
-
-/* .subscribe-text {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-
-  letter-spacing: 0.02em;
-  color: #ffffff;
-
-  margin-bottom: 16px;
-  margin-top: 0;
-} */
-
-/* .subscribe-form-input {
-  width: 264px;
-  height: 40px;
-  padding: 0 0 0 16px;
-  border: 1px solid #ffffff;
-  border-radius: 4px;
-  background-color: #2e2f42;
-
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-} */
-
-/* .subscribe-button {
-  display: flex;
-  align-items: center;
-  padding: 0 0 0 24px;
-  width: 165px;
-  height: 40px;
-  cursor: pointer;
-  margin-left: 24px;
-
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-
-  border: none;
-  background-color: var(--primary-brand-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  transition: background-color var(--transition);
-} */
-
-/* .subscribe-icon {
-  margin-left: 16px;
-
-  fill: white;
-} */
-
-/* .subscribe-button:hover,
-.subscribe-button:focus {
-  background-color: var(--pressed-state-color);
-} */
-
-/*=========== Footer ============== */
 /* ======== Modal Window=========== */
 
-/* .backdrop {
+.backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -1523,21 +1374,21 @@ body {
   transition: opacity var(--transition);
 
   background-color: rgba(46, 47, 66, 0.4);
-} */
+}
 
-/* .backdrop.is-hidden {
+.backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-} */
+}
 
-/* .modal {
+.modal {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 408px;
-  min-height: 584px;
+  min-width: 392px;
+  min-height: 586px;
   padding-top: 72px;
   padding-left: 24px;
   padding-right: 24px;
@@ -1547,9 +1398,9 @@ body {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-} */
+}
 
-/* .modal-close-button {
+.modal-close-button {
   position: absolute;
   top: 24px;
   right: 24px;
@@ -1565,25 +1416,25 @@ body {
   background-color: var(--primary-accent-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-} */
+}
 
-/* .modal-close-button:hover,
+.modal-close-button:hover,
 .modal-close-button:focus {
   background-color: var(--pressed-state-color);
-} */
+}
 
-/* .modal-close-icon {
+.modal-close-icon {
   transition: fill var(--transition);
-} */
+}
 
-/* .modal-close-button:hover .modal-close-icon,
+.modal-close-button:hover .modal-close-icon,
 .modal-close-button:focus .modal-close-icon {
   fill: #ffffff;
-} */
+}
 
 /* -----Modal Form------ */
 
-/* .modal-title {
+.modal-title {
   margin-top: 0;
   margin-bottom: 16px;
   font-family: "Roboto", sans-serif;
@@ -1593,18 +1444,18 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: #2e2f42;
-} */
+}
 
-/* .modal-form {
+.modal-form {
   display: flex;
   flex-direction: column;
-} */
+}
 
-/* .modal-form-field {
+.modal-form-field {
   margin-bottom: 8px;
-} */
+}
 
-/* .modal-field-desc {
+.modal-field-desc {
   display: block;
   margin-bottom: 4px;
   font-weight: 400;
@@ -1612,41 +1463,41 @@ body {
   line-height: 1.2;
   letter-spacing: 0.04em;
   color: #8e8f99;
-} */
+}
 
-/* .modal-form-input {
+.modal-form-input {
   width: 100%;
   height: 40px;
   padding-left: 38px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   transition: background-color var(--transition);
-} */
+}
 
-/* .modal-input-wraper {
+.modal-input-wraper {
   display: block;
   position: relative;
-} */
+}
 
-/* .modal-input-icon {
+.modal-input-icon {
   position: absolute;
   top: 50%;
   left: 16px;
   transform: translate(0, -50%);
   transition: background-color var(--transition);
-} */
+}
 
-/* .modal-form-input:focus {
+.modal-form-input:focus {
   outline: none;
   border: 1px solid var(--primary-brand-color);
   border-radius: 4px;
-} */
+}
 
-/* .modal-form-input:focus + .modal-input-icon {
+.modal-form-input:focus + .modal-input-icon {
   fill: var(--primary-brand-color);
-} */
+}
 
-/* .modal-form-message {
+.modal-form-message {
   width: 100%;
   height: 120px;
   padding-left: 16px;
@@ -1661,21 +1512,21 @@ body {
   font-size: 12px;
   line-height: 1.2;
   letter-spacing: 0.04em;
-} */
+}
 
-/* .modal-form-message:focus {
+.modal-form-message:focus {
   outline: none;
   border: 1px solid var(--primary-brand-color);
   border-radius: 4px;
-} */
+}
 
-/* .modal-form-check {
+.modal-form-check {
   position: absolute;
   -webkit-appearance: none;
   -moz-appearance: none;
-} */
+}
 
-/* .modal-form-check-desc::before {
+.modal-form-check-desc::before {
   content: "";
   width: 16px;
   height: 16px;
@@ -1684,21 +1535,21 @@ body {
   cursor: pointer;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-} */
+}
 
-/* .modal-form-check:checked + .modal-form-check-desc::before {
+.modal-form-check:checked + .modal-form-check-desc::before {
   background-color: var(--primary-brand-color);
   background-image: url(../images/Checked-icon.svg);
   background-repeat: no-repeat;
   background-size: contain;
-} */
+}
 
-/* .modal-form-check:focus + .modal-form-check-desc::before {
+.modal-form-check:focus + .modal-form-check-desc::before {
   border: 2px solid var(--pressed-state-color);
   border-radius: 2px;
-} */
+}
 
-/* .modal-form-check-desc {
+.modal-form-check-desc {
   display: flex;
   align-items: center;
   margin-bottom: 24px;
@@ -1707,14 +1558,14 @@ body {
   line-height: 1.2;
   letter-spacing: 0.04em;
   color: #8e8f99;
-} */
+}
 
-/* .policy-link {
+.policy-link {
   padding-left: 2px;
   color: var(--primary-brand-color);
-} */
+}
 
-/* .modal-send-button {
+.modal-send-button {
   display: block;
   margin: auto;
   width: 169px;
@@ -1733,17 +1584,29 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   transition: background-color var(--transition);
-} */
+}
 
-/* .modal-send-button:focus,
+.modal-send-button:focus,
 .modal-send-button:hover {
   background: var(--pressed-state-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-} */
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    min-width: 408px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .modal {
+    min-height: 584px;
+  }
+}
 
 /*----- Modal Form -----*/
-/* =======Modal Window======= */
+/* =======Modal Window end======= */
 
 /* -------PORTFOLIO PAGE--------- */
 
