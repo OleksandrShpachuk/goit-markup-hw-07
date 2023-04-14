@@ -49,47 +49,55 @@
                     height="8">
                     <use href="./images/sprite.svg#close-modal"></use>
                 </svg></button>
-            <ul class="mob-menu-list list">
-                <li class="mob-menu-item"><a class="mob-menu-link link current" href="./index.html">Studio</a></li>
-                <li class="mob-menu-item"><a class="mob-menu-link link" href="./portfolio.html">Portfolio</a></li>
-                <li class="mob-menu-item"><a class="mob-menu-link link" href="http://">Contacts</a></li>
-            </ul>
-            <ul class="mob-menu-adress-list list">
-                <li class="mob-menu-adress-item"><a class="mob-menu-adress-link link" href="tel:+110001111111">+11 (000)
-                        111-11-11</a></li>
-                <li class=" mob-menu-adress-item"><a class="mob-menu-adress-link link"
-                        href="mailto:info@devstudio.com"><span class="another">info@devstudio.com</span></a></li>
-            </ul>
-            <ul class="mob-menu-icon-list list">
-                <li class="mob-icon-list-item">
-                    <a class="mob-icon-link" href="">
-                        <svg class="mob-menu-link-icon" width="16" height="16">
-                            <use href="./images/sprite.svg#icon-instagram"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="mob-icon-list-item">
-                    <a class="mob-icon-link" href="">
-                        <svg class="mob-menu-link-icon" width="16" height="16">
-                            <use href="./images/sprite.svg#icon-twitter"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="mob-icon-list-item">
-                    <a class="mob-icon-link" href="">
-                        <svg class="mob-menu-link-icon" width="16" height="16">
-                            <use href="./images/sprite.svg#icon-facebook"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="mob-icon-list-item">
-                    <a class="mob-icon-link" href="">
-                        <svg class="mob-menu-link-icon" width="16" height="16">
-                            <use href="./images/sprite.svg#icon-linkedin"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
+            <div class="menu-box">
+                <ul class="mob-menu-list list">
+                    <li class="mob-menu-item"><a class="mob-menu-link link current" href="./index.html">Studio</a>
+                    </li>
+                    <li class="mob-menu-item"><a class="mob-menu-link link" href="./portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="mob-menu-item"><a class="mob-menu-link link" href="">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="adres-box">
+                <ul class="mob-menu-adress-list list">
+                    <li class="mob-menu-adress-item"><a class="mob-menu-adress-link link" href="tel:+110001111111">+11
+                            (000)
+                            111-11-11</a></li>
+                    <li class=" mob-menu-adress-item"><a class="mob-menu-adress-link link"
+                            href="mailto:info@devstudio.com"><span class="another">info@devstudio.com</span></a>
+                    </li>
+                </ul>
+                <ul class="mob-menu-icon-list list">
+                    <li class="mob-icon-list-item">
+                        <a class="mob-icon-link" href="">
+                            <svg class="mob-menu-link-icon" width="16" height="16">
+                                <use href="./images/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mob-icon-list-item">
+                        <a class="mob-icon-link" href="">
+                            <svg class="mob-menu-link-icon" width="16" height="16">
+                                <use href="./images/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mob-icon-list-item">
+                        <a class="mob-icon-link" href="">
+                            <svg class="mob-menu-link-icon" width="16" height="16">
+                                <use href="./images/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mob-icon-list-item">
+                        <a class="mob-icon-link" href="">
+                            <svg class="mob-menu-link-icon" width="16" height="16">
+                                <use href="./images/sprite.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
     <main>
@@ -163,14 +171,27 @@
             <div class="container">
                 <h2 class="work-title">What are we doing</h2>
                 <ul class="work-list list">
-                    <li class="work-img"><img class="img" srcset="./images/img-1.jpg 1x, ./images/img 1@2x.jpg 2x"
-                            src="./images/img-1.jpg" alt="Computer monitor" width="360">
+                    <li class="work-img">
+                        <picture>
+                            <source media="(min-width: 1158px)"
+                                srcset="./images/img-1.jpg 1x, ./images/img-1@2x.jpg 2x">
+                            <img class="img" src="./images/img-1.jpg" alt="Computer monitor" width="360">
+                        </picture>
                     </li>
-                    <li class="work-img"><img class="img" srcset="./images/img-2.jpg 1x, ./images/img 2@2x.jpg 2x"
-                            src="./images/img-2.jpg" alt="Mobile app image" width="360">
+                    <li class="work-img">
+                        <picture>
+                            <source media="(min-width: 1158px)" srcset="./images/img-2.jpg 1x,
+                                ./images/img-2@2x.jpg 2x">
+                            <img class="img" src="./images/img-2.jpg" alt="Mobile app image" width="360">
+                        </picture>
                     </li>
-                    <li class="work-img"><img class="img" srcset="./images/img-3.jpg 1x, ./images/img 3@2x.jpg 2x"
-                            src="./images/img-3.jpg" alt="Responsive website design image" width="360"></li>
+                    <li class="work-img">
+                        <picture>
+                            <source media="(min-width: 1158px)"
+                                srcset="./images/img-3.jpg 1x, ./images/img-3@2x.jpg 2x">
+                            <img class="img" src="./images/img-3.jpg" alt="Responsive website design image" width="360">
+                        </picture>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -180,9 +201,22 @@
                 <h2 class="team-title">Our Team</h2>
                 <ul class="team-list list">
                     <li class="team-list-item">
-                        <img class="team-photo"
-                            srcset="./images/Mark Guerrero-mobile.jpg 1x, ./images/Mark Guerrero-mobile@2x.jpg 2x"
-                            src="./images/Marc-Guerrero.jpg" alt="Photo by Mark Guerrero" width="264">
+                        <picture>
+                            <source
+                                srcset="./images/Mark Guerrero-mobile.jpg 1x, ./images/Mark Guerrero-mobile@2x.jpg 2x"
+                                media="(min-width: 320px)">
+                            <source
+                                srcset="./images/Mark Guerrero-mobile.jpg 1x, ./images/Mark Guerrero-mobile@2x.jpg 2x"
+                                media="(min-width: 428px)">
+                            <source
+                                srcset="./images/Mark Guerrero-mobile.jpg 1x, ./images/Mark Guerrero-mobile@2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source
+                                srcset="./images/Mark Guerrero-mobile.jpg 1x, ./images/Mark Guerrero-mobile@2x.jpg 2x"
+                                media="(min-width: 1158px)">
+                            <img class="team-photo" src="./images/Marc-Guerrero.jpg" alt="Photo by Mark Guerrero"
+                                width="264">
+                        </picture>
                         <div class="team-name">
                             <h3 class="team-subtitle">Mark Guerrero</h3>
                             <p class="team-text">Product Designer</p>
@@ -219,9 +253,18 @@
                         </div>
                     </li>
                     <li class="team-list-item">
-                        <img class="team-photo"
-                            srcset="./images/Tom Ford-mobile.jpg 1x, ./images/Tom Ford-mobile@2x.jpg 2x"
-                            src="./images/Tom Ford-mobile.jpg" alt="Tom Ford photo" width="264">
+                        <picture>
+                            <source media="(min-width: 320px)"
+                                srcset="./images/Tom Ford-mobile.jpg 1x, ./images/Tom Ford-mobile@2x.jpg 2x">
+                            <source media="(min-width: 428px)"
+                                srcset="./images/Tom Ford-mobile.jpg 1x, ./images/Tom Ford-mobile@2x.jpg 2x">
+                            <source media="(min-width: 768px)"
+                                srcset="./images/Tom Ford-mobile.jpg 1x, ./images/Tom Ford-mobile@2x.jpg 2x">
+                            <source media="(min-width: 1158px)"
+                                srcset="./images/Tom Ford-mobile.jpg 1x, ./images/Tom Ford-mobile@2x.jpg 2x">
+                            <img class="team-photo" src="./images/Tom Ford-mobile.jpg" alt="Tom Ford photo" width="264">
+                        </picture>
+
                         <div class="team-name">
                             <h3 class="team-subtitle">Tom Ford</h3>
                             <p class="team-text">Frontend Developer</p>
@@ -258,9 +301,19 @@
                         </div>
                     </li>
                     <li class="team-list-item">
-                        <img class="team-photo"
-                            srcset="./images/Camila Garcia-mobile.jpg 1x, ./images/Camila Garcia-mobila@2x.jpg 2x"
-                            src="./images/Camila Garcia-mobile.jpg" alt="Camila Garcia photo" width="264">
+                        <picture>
+                            <source media="(min-width: 320px)"
+                                srcset="./images/Camila Garcia-mobile.jpg 1x, ./images/Camila Garcia-mobila@2x.jpg 2x">
+                            <source media="(min-width: 428px)"
+                                srcset="./images/Camila Garcia-mobile.jpg 1x, ./images/Camila Garcia-mobila@2x.jpg 2x">
+                            <source media="(min-width: 768px)"
+                                srcset="./images/Camila Garcia-mobile.jpg 1x, ./images/Camila Garcia-mobila@2x.jpg 2x">
+                            <source media="(min-width: 1158px)"
+                                srcset="./images/Camila Garcia-mobile.jpg 1x, ./images/Camila Garcia-mobila@2x.jpg 2x">
+                            <img class="team-photo" src="./images/Camila Garcia-mobile.jpg" alt="Camila Garcia photo"
+                                width="264">
+                        </picture>
+
                         <div class="team-name">
                             <h3 class="team-subtitle">Camila Garcia</h3>
                             <p class="team-text">Marketing</p>
@@ -297,9 +350,19 @@
                         </div>
                     </li>
                     <li class="team-list-item">
-                        <img class="team-photo"
-                            srcset="./images/Daniel Wilson-mobile.jpg 1x, ./images/Daniel Wilson-mobile@2x 2x"
-                            src="./images/Daniel Wilson-mobile.jpg" alt="Daniel Wilson photo" width="264">
+                        <picture>
+                            <source media="(min-width: 320px)"
+                                srcset="./images/Daniel Wilson-mobile.jpg 1x, ./images/Daniel Wilson-mobile@2x 2x">
+                            <source media="(min-width: 428px)"
+                                srcset="./images/Daniel Wilson-mobile.jpg 1x, ./images/Daniel Wilson-mobile@2x 2x">
+                            <source media="(min-width: 768px)"
+                                srcset="./images/Daniel Wilson-mobile.jpg 1x, ./images/Daniel Wilson-mobile@2x 2x">
+                            <source media="(min-width: 1158px)"
+                                srcset="./images/Daniel Wilson-mobile.jpg 1x, ./images/Daniel Wilson-mobile@2x 2x">
+                            <img class="team-photo" src="./images/Daniel Wilson-mobile.jpg" alt="Daniel Wilson photo"
+                                width="264">
+                        </picture>
+
                         <div class="team-name">
                             <h3 class="team-subtitle">Daniel Wilson</h3>
                             <p class="team-text">UI Designer</p>
