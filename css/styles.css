@@ -81,7 +81,7 @@ body {
 
 @media screen and (min-width: 1158px) {
   .container {
-    width: 1158px;
+    min-width: 1158px;
   }
 }
 
@@ -387,7 +387,6 @@ body {
   padding-bottom: 112px;
   text-align: center;
 
-  /* max-width: 428px; */
   height: 432px;
   margin-left: auto;
   margin-right: auto;
@@ -442,7 +441,6 @@ body {
 
 @media screen and (min-width: 768px) {
   .hero {
-    /* max-width: 768px; */
     height: 436px;
 
     background-image: var(--grad-fon), url(../images/Dark_bg_tablet.jpg);
@@ -459,7 +457,7 @@ body {
 
 @media screen and (min-width: 1158px) {
   .hero {
-    /* max-width: 1440px; */
+    max-width: 1440px;
     height: 600px;
     padding-top: 188px;
     padding-bottom: 188px;
@@ -761,6 +759,10 @@ body {
   padding-bottom: 96px;
 }
 
+.customer-fild {
+  width: 100%;
+}
+
 .customer-title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -777,13 +779,25 @@ body {
   color: #2e2f42;
 }
 
-.customer-list-item {
+.customer-list {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.customer-list-item {
+  width: calc((100% - 16px) / 2);
+  padding: 0;
   border: 1px solid #8e8f99;
   border-radius: 4px;
   transition: border var(--transition);
+}
+
+.customer-list-item:nth-child(2n + 1) {
+  margin-right: 16px;
+}
+.customer-list-item:nth-child(-n + 4) {
+  margin-bottom: 72px;
 }
 
 .customer-list-item:hover,
@@ -791,7 +805,15 @@ body {
   border: 1px solid var(--pressed-state-color);
 }
 
+.customer-link {
+  width: 100%;
+  height: 88px;
+}
+
 .customer-icon {
+  width: 100%;
+  height: 88px;
+  padding: 0;
   transition: fill var(--transition);
   fill: #8e8f99;
 }
@@ -801,60 +823,24 @@ body {
   fill: var(--pressed-state-color);
 }
 
-@media screen and (max-width: 767px) {
-  .customer-list {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-  }
-
-  .customer-fild {
-    width: 428px;
-    align-items: center;
-    justify-content: center;
-  }
-  .customer-list-item:not(:last-child) {
-    margin-right: 16px;
-  }
-
-  .customer-list-item:nth-child(-n + 4) {
-    margin-bottom: 72px;
-  }
-}
-
-.customer-link {
-  width: 190px;
-  height: 88px;
-}
-
-.customer-icon {
-  width: 190px;
-  height: 88px;
-}
-
 @media screen and (min-width: 768px) {
   .customer-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     column-gap: 24px;
     row-gap: 72px;
     align-items: center;
+    justify-content: center;
     padding: 0;
   }
 
   .customer-list-item {
-    justify-content: center;
+    width: 168px;
   }
 
-  .customer-link {
-    width: 168px;
-    height: 88px;
+  .customer-list-item:nth-child(2n + 1) {
+    margin-right: 0;
   }
-
-  .customer-icon {
-    width: 168px;
-    height: 88px;
+  .customer-list-item:nth-child(-n + 4) {
+    margin-bottom: 0;
   }
 }
 
@@ -878,6 +864,7 @@ body {
 /*=========== Footer ============== */
 
 .footer {
+  width: 100%;
   padding-top: 96px;
   padding-bottom: 96px;
   background-color: #2e2f42;
@@ -1055,15 +1042,14 @@ body {
 
 @media screen and (min-width: 768px) {
   .wraps {
+    max-width: 584px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    width: 768px;
-    gap: 24px;
   }
 
   .logo-wrap {
     width: 264px;
+    margin-right: 24px;
     align-items: flex-start;
   }
 
@@ -1101,14 +1087,14 @@ body {
 
 @media screen and (min-width: 1158px) {
   .footer {
+    width: 100%;
     padding-top: 100px;
     padding-bottom: 100px;
   }
 
   .wraps {
-    display: flex;
     flex-wrap: nowrap;
-    min-width: 1158px;
+    max-width: 1158p;
   }
 
   .logo-wrap {
@@ -1121,12 +1107,17 @@ body {
     margin-right: 80px;
   }
 
-  .subscribe-text {
-    margin: 0;
+  .wrap-subscribe {
+    display: inline;
+    justify-content: flex-start;
   }
 
-  .wrap-subscribe {
-    justify-content: flex-start;
+  .subscribe-form {
+    padding: 0;
+  }
+
+  .subscribe-text {
+    margin-bottom: 16px;
   }
 }
 
@@ -1157,7 +1148,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 392px;
+  width: 320px;
   min-height: 586px;
   padding-top: 72px;
   padding-left: 24px;
@@ -1168,6 +1159,12 @@ body {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 398px) {
+  .modal {
+    width: 398p;
+  }
 }
 
 .modal-close-button {
@@ -1205,6 +1202,7 @@ body {
 /* -----Modal Form------ */
 
 .modal-title {
+  width: 100%;
   margin-top: 0;
   margin-bottom: 16px;
   font-family: "Roboto", sans-serif;
