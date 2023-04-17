@@ -1397,6 +1397,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  width: 100%;
   margin-bottom: 48px;
 }
 
@@ -1457,37 +1458,27 @@ body {
 .works-list {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+}
+
+.item-img {
+  width: 100%;
 }
 
 @media screen and (max-width: 767px) {
-  .work-list {
-    max-width: 396px;
-  }
-
   .works-list-item:not(:last-child) {
     margin-bottom: 48px;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .work-list {
-    max-width: 736px;
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .works-list {
+    min-width: 744px;
+    gap: 72px 24px;
   }
   .portfolio {
     padding-top: 64px;
     padding-bottom: 96px;
-  }
-}
-
-@media screen and (max-width: 1158px) {
-  .works-list-item {
-    width: 356px;
-  }
-  .works-list-item:not(:last-child) {
-    margin-bottom: 72px;
-  }
-  .works-list-item:nth-child(2n + 1) {
-    margin-right: 24px;
   }
 }
 
@@ -1497,13 +1488,14 @@ body {
     padding-bottom: 120px;
   }
 
-  .work-list {
-    max-width: 1158px;
+  .works-list {
+    width: 100%;
+    min-width: 1128px;
+    gap: 0 24px;
   }
 
-  .works-list-item {
-    margin-top: 24px;
-    margin-bottom: 24px;
+  .works-list-item:nth-child(-n + 6) {
+    margin-bottom: 40px;
   }
 
   .item-link {
