@@ -170,10 +170,15 @@ body {
 }
 
 .menu-box {
+  width: 100%;
   margin-bottom: 50px;
 }
 
-@media (min-width: 767px) {
+.adress-box {
+  min-width: 100%;
+}
+
+@media screen and (min-width: 767px) {
   .mob-menu {
     display: none;
   }
@@ -225,10 +230,16 @@ body {
 .mob-menu-adress-link {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 25px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--primary-brand-color);
+}
+
+@media screen and (min-width: 428px) {
+  .mob-menu-adress-link {
+    font-size: 36px;
+  }
 }
 
 .mob-menu-adress-link:hover,
@@ -248,7 +259,8 @@ body {
 .mob-menu-icon-list {
   display: flex;
   align-items: center;
-  gap: 56px;
+  justify-content: space-between;
+  max-width: 328px;
 }
 
 .mob-icon-link {
@@ -1148,7 +1160,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 320px;
+  width: 100%;
+  max-width: 392px;
   min-height: 586px;
   padding-top: 72px;
   padding-left: 24px;
@@ -1161,9 +1174,9 @@ body {
   border-radius: 4px;
 }
 
-@media screen and (min-width: 398px) {
+@medi screen and (max-width: 392px) {
   .modal {
-    width: 398p;
+    min-widt: 320px;
   }
 }
 
