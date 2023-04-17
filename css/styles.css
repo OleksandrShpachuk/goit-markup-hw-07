@@ -1174,12 +1174,6 @@ body {
   border-radius: 4px;
 }
 
-@medi screen and (max-width: 392px) {
-  .modal {
-    min-widt: 320px;
-  }
-}
-
 .modal-close-button {
   position: absolute;
   top: 24px;
